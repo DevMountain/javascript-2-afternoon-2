@@ -185,7 +185,7 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 var maker = function() {
     var arr = [];
     for (var i = 0; i < 215; i++) {
-        arr.push(i);
+        arr.push(i + 1);
         return arr;
     }
 };
@@ -201,7 +201,12 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
   //Code Here
-
+var addTen = function (arr) {
+    for (var i = 0; i < arr.length; i++) {
+        return parseFloat(arr[i]) + 10;
+    }
+};
+addTen(numbers);
 
 
 //Next Problem
@@ -222,6 +227,23 @@ for(var i = 0; i < num2; i++){
 //Write a function that is given arr1 and arr2 is it's only arguments. Return the array which is longest.
 
   //Code Here
+ var random = function (arr1, arr2) {
+    for (var i = 0; i < num1; i++) {
+        arr1.push(i);
+    }
+    for (var j = 0; j < num2; j++) {
+        arr2.push(j);
+    }
+    if (arr1.length > arr2.length) {
+
+
+        return ("arr1 = " + arr1);
+    } else {
+        return ("arr2 = " + arr2);
+    }
+};
+random(arr1, arr2);
+
 
 
 /*As a continuation of the previous problem, write another function called 'both'.
@@ -230,3 +252,16 @@ for(var i = 0; i < num2; i++){
 */
 
   //Code Here
+
+var both = function (arr1, arr2) {
+    var combo = [];
+    for (var i = 0; i < num1; i++) {
+        arr1.push(i);
+    }
+    for (var j = 0; j < num2; j++) {
+        arr2.push(j);
+    }
+    return combo.concat(arr1 + arr2);
+};
+both(arr1, arr2);
+
