@@ -42,6 +42,13 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 //Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
 
   //Code Here
+  var letters = ['A', 'B', 'C', 'D', 'E'];
+var reversedLooper = function(arr) {
+    for (var i = arr.length - 1; i >= 0; i--) {
+        alert(arr[i]);
+    }
+};
+reversedLooper(letters);
 
 
 //Next Problem
@@ -51,6 +58,21 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 //Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
 
   //Code Here
+ var nums = [1,2,3,6,22,98,45,23,22,12];
+var evenFinder = function(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            alert(arr[i]);
+        }
+        else {
+            arr.splice(i, 1);
+        }
+    }
+};
+evenFinder(nums);
+console.log(nums);
+
+            
 
 
 //Next problem
@@ -65,6 +87,17 @@ var odds = []
 
 
   //Code Here
+var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var evens = [];
+var odds = [];
+var divider = function(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            evens.push(arr[i]);
+        }
+        else odds.push(arr[i]);
+    }
+};
 
 
 //Next Problem
