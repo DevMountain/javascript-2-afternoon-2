@@ -87,21 +87,23 @@ var odds = []
 
 
   //Code Here
-var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var nums = [1, 2, 34, 54, 55, 34, 32, 11, 19, 17, 54, 66, 13];
 var evens = [];
-var odds = [];
-var divider = function(arr) {
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 === 0) {
-            evens.push(arr[i]);
+var odds = []
+var divider = function(nums) {
+    var combo;
+    for (var i = 0; i < nums.length; i++) {
+        if (nums[i] % 2 === 0) {
+            evens.push(nums[i]);
         }
-        else{
-           odds.push(arr[i]);
-        } 
+        else {
+            odds.push(nums[i]);
+        }
     }
-    var combined = [evens, odds];
-    return combined
+     combo = [evens, odds];
+     return combo;
 };
+
 
 
 //Next Problem
@@ -147,7 +149,9 @@ var reverse = function (string) {
 };
 reverse(str);
 
-
+var reverse = function(sting) {
+  return str.split("").reverse().join("");
+}
 
 
 //Next Problem
