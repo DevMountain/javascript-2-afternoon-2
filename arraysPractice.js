@@ -185,6 +185,15 @@ removeItem(myGroceryList, "chips");
 //addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
 
+var removeItem = function (arrOne, string, string2) {
+    for (var i = 0; i < arrOne.length; i++) {
+        if (arrOne[i] === string) {
+            arrOne.splice(i, 1, string2);
+            return arrOne;
+        }
+    }
+};
+removeItem(myGroceryList, "chips", "jerky");
 
 //Next Problem
 
