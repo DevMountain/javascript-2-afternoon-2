@@ -95,8 +95,12 @@ var divider = function(arr) {
         if (arr[i] % 2 === 0) {
             evens.push(arr[i]);
         }
-        else odds.push(arr[i]);
+        else{
+           odds.push(arr[i]);
+        } 
     }
+    var combined = [evens, odds];
+    return combined
 };
 
 
@@ -109,17 +113,41 @@ var getRandomArbitrary = function() {
 var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 //Above your given a function that will return a random number between 0 and 30, and an array full or numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
 
-  //Code Here
+   getRandomArbitrary = function() {
+  return Math.floor(Math.random() * (30 - 0) + 0);
+};
+var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+var finder = function(num) {
+    for (i = 0; i < numbers.length; i++) {
+        if (num === numbers[i]) {
+            alert(true);
+            return true;
+        }
+        else {
+            alert(false);
+            return false;
+        }
+    }
+};
+finder(getRandomArbitrary());
 
 
 //Next problem
 
 
-
 var str = 'this is my sentence';
 //Write a function called reverse that takes is given str as it's only argument and returns that string after it's been reversed
+var reverse = function (string) {
+  var arr = [];
+  for (var i = string.length; i >= 0; i--) {
+    arr.push(string[i]);
+      alert(arr);
+      return arr;
+  }
+};
+reverse(str);
 
-  //Code Here
+
 
 
 //Next Problem
@@ -150,6 +178,14 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
   //Code Here
+var maker = function() {
+    var arr = [];
+    for (var i = 0; i < 215; i++) {
+        arr.push(i);
+        return arr;
+    }
+};
+maker();
 
 
 
