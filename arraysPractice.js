@@ -234,6 +234,24 @@ for(var i = 0; i < num2; i++){
 //Write a function that is given arr1 and arr2 is it's only arguments. Return the array which is longest.
 
   //Code Here
+  var longerArray = function(arr1, arr2){
+    if (arr1.length === arr2.length){
+      console.log("It seems that they are the same length, so I will return the first");
+      return arr1;
+    } else if(arr1.length > arr2.length){
+      console.log("arr1 is longer");
+      return arr1;
+    } else {
+      console.log("arr2 is longer");
+      return arr2;
+    }
+    console.log("A boo boo happened. Look at the inputs")
+    return false;
+  }
+
+  longerArray(arr1, arr2);
+
+
 
 
 /*As a continuation of the previous problem, write another function called 'both'.
@@ -242,6 +260,16 @@ for(var i = 0; i < num2; i++){
 */
 
   //Code Here
+  var both = function(arr1, arr2){
+    var bothArr = [];
+    for (var i = 0; i < arr1.length; i++){
+      bothArr.push(arr1[i]);
+    }
+    for (var i = 0; i < arr2.length; i++){
+      bothArr.push(arr2[i]);
+    }
+    return bothArr;
+  }
 
 
 
@@ -268,4 +296,4 @@ for(var i = 0; i < num2; i++){
 
 
 
-  
+
