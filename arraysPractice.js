@@ -65,7 +65,7 @@ var odds = [];
 
 var getRandomArbitrary = function() {
   return Math.floor(Math.random() * (30 - 0) + 0);
-}
+};
 var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 //Above you're given a function that will return a random number between 0 and 30, and an array full of numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
 
@@ -141,7 +141,7 @@ for(var i = 0; i < num1; i++){
 for(var i = 0; i < num2; i++){
   arr2.push(i);
 }
-//Above is some code that adds a random number to both arr1 and arr2.
+//Above is some code that adds a random number of values to both arr1 and arr2.
 //Write a function that is given arr1 and arr2 as it's only arguments. Return the array which is longest.
 
   //Code Here
@@ -186,7 +186,7 @@ var colt = {
     name: 'Colt',
     position: 'Everything really',
     spiritAnimal: 'Young Male Horse'
-}
+};
 
 /*Above you're given an empty array with four objects. Fill the devMountainEmployees
 array with those four objects. After that console.log the length of the Array and make
@@ -194,7 +194,7 @@ sure that it's equal to 4. */
 
   //Code Here
 
-/*Now let's say Cahlan has a mental breakdown and has to take a leave of absense to 'find himself'.
+/*Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
 
   //Code Here
@@ -218,12 +218,12 @@ var data = [
     {
         artist: 'shakira',
         album: 'hips don\'t lie',
-        tracks: 16,
+        tracks: 16
     },
     {
         artist: 'shakira',
         album: 'mariposa',
-        tracks: 12,
+        tracks: 12
     },
     {
         artist: 'shakira',
@@ -250,7 +250,7 @@ var user1 = {
     email: 'tylermcginnis33@gmail.com',
     password: 'iLoveJavaScript',
     username: 'infiniateLoop'
-}
+};
 
 //Your Code Here
 
