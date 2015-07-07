@@ -2,7 +2,7 @@
 
 
 var arr = [10,20,30];
-//Create a function named 'first' that is given 'arr' as the argument and  returns the first item the given array.
+//Create a function named 'first' that is given 'arr' as the argument and  returns the first item in the given array.
 
   //Code Here
 
@@ -12,7 +12,7 @@ var arr = [10,20,30];
 
 
 var arr = [40,50,60];
-//Create a function named 'last' that is given 'arr' as the argument and returns the last item the given array.
+//Create a function named 'last' that is given 'arr' as the argument and returns the last item in the given array.
 
 
   //Code Here
@@ -67,7 +67,7 @@ var getRandomArbitrary = function() {
   return Math.floor(Math.random() * (30 - 0) + 0);
 }
 var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
-//Above you're given a function that will return a random number between 0 and 30, and an array full or numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
+//Above you're given a function that will return a random number between 0 and 30, and an array full of numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
 
   //Code Here
 
@@ -77,7 +77,7 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
 
 var str = 'this is my sentence';
-//Write a function called reverse that takes is given str as it's only argument and returns that string after it's been reversed
+//Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
 
   //Code Here
 
@@ -101,8 +101,8 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
   //Code Here
 
-//removeItem('chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
-//addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
+//removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
+//addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
 
 
@@ -142,7 +142,7 @@ for(var i = 0; i < num2; i++){
   arr2.push(i);
 }
 //Above is some code that adds a random number to both arr1 and arr2.
-//Write a function that is given arr1 and arr2 is it's only arguments. Return the array which is longest.
+//Write a function that is given arr1 and arr2 as it's only arguments. Return the array which is longest.
 
   //Code Here
 
@@ -260,7 +260,7 @@ and those objects contain properties about the specific person you follow.*/
 
 /*Now let's say that Tyler decided to delete his account. Loop through your array of
 objects until you find Tyler's account (use tylermcginnis33@gmail.com to find him).
-Once you find the particular indice he's located in, delete him from the array.*/
+Once you find the particular index he's located in, delete him from the array.*/
 
   //Code Here
 
