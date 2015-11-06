@@ -1,118 +1,116 @@
-// //Once you complete a problem, open up Chrome and check the answer in the console.
+//Once you complete a problem, open up Chrome and check the answer in the console.
 
 
-// var arr = [10,20,30];
-// //Create a function named 'first' that is given 'arr' as the argument and  returns the first item in the given array.
-// function first(){
-//   console.log(arr[0]);
-// }
-// first();
-//   //Code Here
+var arr = [10,20,30];
+//Create a function named 'first' that is given 'arr' as the argument and  returns the first item in the given array.
+function first(){
+  console.log(arr[0]);
+}
+first();
+  //Code Here
 
 
-// //Next problem
-
-
-
-// var arr = [40,50,60];
-// //Create a function named 'last' that is given 'arr' as the argument and returns the last item in the given array.
-// function last(){
-//   console.log(arr[arr.length-1]);
-// }
-// last();
-//   //Code Here
-
-
-// //Next Problem
-
-
-// var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
-// //Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
-
-//   //Code Here
-// function looper(family){
-//   for(var i = 0; i < family.length; i++){
-//     console.log(family[i]);
-//   }
-// }
-// looper(family);
-
-// //Next problem
+//Next problem
 
 
 
-// var letters = ['A', 'B', 'C', 'D', 'E'];
-// //Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
-// function reversedLooper(letters){
-// for(var i = 0; i < letters.length; i++){
-//   console.log(letters.reverse());
-// } 
-// }
-//   //Code Here
-// reversedLooper(letters);
+var arr = [40,50,60];
+//Create a function named 'last' that is given 'arr' as the argument and returns the last item in the given array.
+function last(){
+  console.log(arr[arr.length-1]);
+}
+last();
+  //Code Here
 
-// //Next Problem
-
-
-// var nums = [1,2,3,6,22,98,45,23,22,12];
-// //Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
-
-//   //Code Here
-
-
-// //Next problem
-
-
-// var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
-// var evens = [];
-// var odds = [];
-// //Write a function called divider that is given three arguments, nums, evens, and odds.
-// //Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
-
-
-
-//   //Code Here
-
-
-// //Next Problem
-
-
-// var getRandomArbitrary = function() {
-//   return Math.floor(Math.random() * (30 - 0) + 0);
-// };
-// var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
-// //Above you're given a function that will return a random number between 0 and 30, and an array full of numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
-
-//   //Code Here
-
-// function finder(numbers){
-//   var randomNumber = Math.floor(Math.random() * (30 - 0) + 0);
-//   console.log(randomNumber);
-//   for(var i = 0; i < numbers.length; i++){
-    
-//     if(randomNumber === numbers[i]){
-//       console.log("the random number "+randomNumber+" is equal to " + numbers[i]);
-//       console.log("the match is " + true);
-//     }
-//     else{
-//       console.log("the random number "+randomNumber+" is not equal to " + numbers[i]);
-//       console.log("the match is " + false);
-//     }
-//   }
-// }
-// //Next problem
-
-// finder(numbers);
-
-// var str = 'this is my sentence';
-// //Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
-
-//   //Code Here
-// function reverse(str){
-//   return str.split('').reverse().join('');
-// }
 
 //Next Problem
+
+
+var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
+//Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
+
+  //Code Here
+function looper(family){
+  for(var i = 0; i < family.length; i++){
+    console.log(family[i]);
+  }
+}
+looper(family);
+
+//Next problem
+
+
+
+var letters = ['A', 'B', 'C', 'D', 'E'];
+//Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
+function reversedLooper(letters){
+for(var i = 0; i < letters.length; i++){
+  console.log(letters.reverse());
+} 
+}
+  //Code Here
+reversedLooper(letters);
+
+//Next Problem
+
+
+var nums = [1,2,3,6,22,98,45,23,22,12];
+//Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
+
+  //Code Here
+
+
+//Next problem
+
+
+var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var evens = [];
+var odds = [];
+//Write a function called divider that is given three arguments, nums, evens, and odds.
+//Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
+
+
+
+  //Code Here
+
+
+//Next Problem
+
+
+var getRandomArbitrary = function() {
+  return Math.floor(Math.random() * (30 - 0) + 0);
+};
+var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+//Above you're given a function that will return a random number between 0 and 30, and an array full of numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
+
+  //Code Here
+
+function finder(numbers){
+  var randomNumber = Math.floor(Math.random() * (30 - 0) + 0);
+  console.log(randomNumber);
+  for(var i = 0; i < numbers.length; i++){
+    
+    if(randomNumber === numbers[i]){
+      console.log("the random number "+randomNumber+" is equal to " + numbers[i]);
+      console.log("the match is " + true);
+    }
+    else{
+      console.log("the random number "+randomNumber+" is not equal to " + numbers[i]);
+      console.log("the match is " + false);
+    }
+  }
+}
+//Next problem
+
+finder(numbers);
+
+var str = 'this is my sentence';
+//Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
+
+  //Code Here
+function reverse(str){
+  return str.split('').reverse().join('');
+}
 
 
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
@@ -128,6 +126,12 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   and the second is an item to add to your grocery list. In addItem add the item you passed in to
   myGroceryList then return the new, updated grocery list.
 */
+function help(){
+    console.log("removeInstance(list, item)");
+    console.log("makeList(name)");
+    console.log("removeAllItems(list, item)");
+    console.log("addItem(list, item)");
+}
 function removeInstance(list, item){
   for(var i = 0; i < list.length; i++){
     if(item === list[i]){
