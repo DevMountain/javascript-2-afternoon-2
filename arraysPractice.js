@@ -1,7 +1,7 @@
 //Once you complete a problem, open up Chrome and check the answer in the console.
 
 
-var arr = [10,20,30];
+var nums1 = [10,20,30];
 //Create a function named 'first' that is given 'arr' as the parameter and  returns the first item in the given array.
 
   //Code Here
@@ -11,7 +11,7 @@ var arr = [10,20,30];
 
 
 
-var arr = [40,50,60];
+var bigNumbs = [40,50,60];
 //Create a function named 'last' that is given 'arr' as the parameter and returns the last item in the given array.
 
 
@@ -22,7 +22,7 @@ var arr = [40,50,60];
 
 
 var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
-//Create a function named 'looper' that is given family as it's only parameter, loops through the given array, and alerts every item in the array.
+//Create a function named 'looper' that is given 'arr' as it's only parameter, loops through the given array, and alerts every item in the array.
 
   //Code Here
 
@@ -32,7 +32,7 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 
 
 var letters = ['A', 'B', 'C', 'D', 'E'];
-//Write a function called reversedLooper that is given letters as it's only parameter and loops through the given array backwards alerting every item in the array starting at the end.
+//Write a function called reversedLooper that is given 'arr' as it's only parameter and loops through the given array backwards alerting every item in the array starting at the end.
 
   //Code Here
 
@@ -40,8 +40,8 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 //Next Problem
 
 
-var nums = [1,2,3,6,22,98,45,23,22,12];
-//Write a function named evenFinder that is given nums as it's only parameter and removes all values that aren't even from the given array.
+var manyNums = [1,2,3,6,22,98,45,23,22,12];
+//Write a function named evenFinder that is given 'arr' as it's only parameter and removes all values that aren't even from the given array.
 
   //Code Here
 
@@ -52,7 +52,7 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 var evens = [];
 var odds = [];
-//Write a function called divider that is given three parameters, nums, evens, and odds.
+//Write a function called divider that is given three parameters, 'arr1', arr2, and arr3.
 //Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
 
 
