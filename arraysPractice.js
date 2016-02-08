@@ -66,8 +66,12 @@ var odds = [];
 var getRandomArbitrary = function() {
   return Math.floor(Math.random() * (30 - 0) + 0);
 };
-var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
-//Above you're given a function that will return a random number between 0 and 30, and an array full of numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
+// var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+//Above you're given a function that will return a random number between 0 and 30.  There is also a commented out array full of numbers to help you visualize what your function will be receiving.
+
+// Your job is to write a function named finder that will get a random number (by invoking getRandomArbitrary), then loop through the array (that will be passed in as a parameter) to see if that random number is in the array. If it is, return true, if it's not, return false
+
+  //Code Here
 
   //Code Here
 
