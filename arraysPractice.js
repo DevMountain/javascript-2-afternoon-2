@@ -152,8 +152,9 @@ for(var i = 0; i < num2; i++){
 
 
 /*As a continuation of the previous problem, write another function called 'both'.
-  Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example)
-  'both' should return a new array full of numbers that are found in both arr1 and arr2.
+  Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example).
+  'both' should return a new array full of numbers that are only found in both arr1 and arr2.
+  Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
 
   //Code Here
