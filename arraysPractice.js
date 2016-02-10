@@ -50,9 +50,7 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 
 var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
-var evens = [];
-var odds = [];
-//Write a function called divider that is given three arguments, nums, evens, and odds.
+//Write a function called divider that is given one argument, numbersArray.
 //Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
 
 
@@ -92,15 +90,17 @@ var str = 'this is my sentence';
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 /*
   Here we're going to write a function that mimics going shopping and checking things off of our grocery list,
-  and adding new items to our list. 
-  
+  and adding new items to our list.
+
   Write a function called removeItem that is given two arguments, the first is myGroceryList, and the
   second is an item to remove from myGroceryList. If the second argument (or the item to add or remove) matches an item in myGroceryList,
-  remove that item from the your grocery list and return the new, updated grocery list. 
-  
+  remove that item from the your grocery list and return the new, updated grocery list.
+
   Once you do that, write another function called addItem that is given two arguments, the first is myGroceryList
   and the second is an item to add to your grocery list. In addItem add the item you passed in to
   myGroceryList then return the new, updated grocery list.
+
+  In both the removeItem function and the addItem function, you will also need to check for valid aurguments. Specrunner will try to call your functions without passing in valid aurguments. When this happens, you will need to respond by returning an empty array.
 */
 
   //Code Here
@@ -153,14 +153,14 @@ for(var i = 0; i < num2; i++){
 
 /*As a continuation of the previous problem, write another function called 'both'.
   Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example).
-  'both' should return a new array full of numbers that are only found in both arr1 and arr2.
+  'both' should return a new array with the matching numbers found in both arr1 and arr2.
   Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
 
   //Code Here
-  
-  
-  
+
+
+
 
 //NEXT PROBLEM
 
@@ -270,4 +270,3 @@ Once you find the particular index he's located in, delete him from the array.*/
   //Code Here
 
 //The activity we just did is very much how data works in 'the real world'.
-
