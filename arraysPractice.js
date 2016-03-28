@@ -49,7 +49,7 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 //Next problem
 
 
-var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 //Write a function called divider that is given one argument, numbersArray.
 //Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
 
