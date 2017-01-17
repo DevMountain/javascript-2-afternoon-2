@@ -139,7 +139,7 @@ describe('arraysPractice', function () {
 			expect(removeItem).toEqual(jasmine.any(Function));
 		})
 		it('should return an array', function () {
-			expect(removeItem()).toEqual(jasmine.any(Array));
+			expect(removeItem(['one', 'two', 'three'], 'two')).toEqual(jasmine.any(Array));
 		})
 		it('should remove an item from a groceryList array (if it is in the array)', function () {
 			var groceryList = ['chips', 'soda', 'celery', 'pizza'];
@@ -165,7 +165,7 @@ describe('arraysPractice', function () {
 			expect(addItem).toEqual(jasmine.any(Function));
 		})
 		it('should return an array', function () {
-			expect(addItem()).toEqual(jasmine.any(Array));
+			expect(addItem(['one', 'two'], 'three')).toEqual(jasmine.any(Array));
 		})
 		it('should add an item to an array', function () {
 			var groceryList = [];
