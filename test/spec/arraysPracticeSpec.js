@@ -165,7 +165,7 @@ describe('arraysPractice', function () {
 			expect(addItem).toEqual(jasmine.any(Function));
 		})
 		it('should return an array', function () {
-			expect(addItem()).toEqual(jasmine.any(Array));
+			expect(addItem([])).toEqual(jasmine.any(Array));
 		})
 		it('should add an item to an array', function () {
 			var groceryList = [];
