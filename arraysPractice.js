@@ -62,7 +62,7 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 
 var getRandomArbitrary = function() {
-  return Math.floor(Math.random() * (30 - 0) + 0);
+  return Math.floor(Math.random() * 30);
 };
 // var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 //Above you're given a function that will return a random number between 0 and 30.  There is also a commented out array full of numbers to help you visualize what your function will be receiving.
@@ -135,8 +135,8 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 
 
 
-var num1 = Math.floor(Math.random() * (30 - 0) + 0);
-var num2 = Math.floor(Math.random() * (30 - 0) + 0);
+var num1 = Math.floor(Math.random() * 30);
+var num2 = Math.floor(Math.random() * 30);
 var arr1 = [];
 var arr2 = [];
 for(var i = 0; i < num1; i++){
@@ -208,35 +208,6 @@ Loop through your devMountainEmployees until you find cahlan, then remove him fr
 
 
 //NEXT PROBLEM
-
-
-
-
-/*Now we're going to combine what we've learned today (objects) with what we learned
-yesterday (arrays). Yeah, take a deep breathe. You're ready for this, promise.
-Let's think back to our itunes example (tylermcginnis.com/itunes).
-Notice that when you type in an artist name, iTunes gives us back a LOT of data.
-What they're really giving us is an Array full of Objects. It probably looks something
-like this. */
-
-var data = [
-    {
-        artist: 'shakira',
-        album: 'hips don\'t lie',
-        tracks: 16
-    },
-    {
-        artist: 'shakira',
-        album: 'mariposa',
-        tracks: 12
-    },
-    {
-        artist: 'shakira',
-        album: 'greatest hits',
-        tracks: 19
-    }
-];
-
 
 
 /*A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects)
