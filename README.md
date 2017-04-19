@@ -3,10 +3,10 @@
 JS-Arrays
 =========
 
-##Objective
+## Objective
 Better understand arrays in Javascript by completing a series of activities
 
-##Directions
+## Directions
 Fork this repo, clone your fork, then open arraysPractice.js and complete all the activities. 
 * COMMIT AND PUSH YOUR CODE OFTEN!
 
