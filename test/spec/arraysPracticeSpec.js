@@ -117,20 +117,20 @@ describe('arraysPractice', function () {
 			expect(finder(arr)).toBe(false);
 		})
 	})
-	describe('reverse', function () {
-		it('should exist', function () {
-			expect(reverse).toBeDefined();
-		})
-		it('should be a function', function () {
-			expect(reverse).toEqual(jasmine.any(Function));
-		})
-		it('should return a string', function () {
-			expect(reverse('')).toEqual(jasmine.any(String));
-		})
-		it('should reverse the string passed to it', function () {
-			expect(reverse('abcd')).toEqual('dcba');
-		})
-	})
+	// describe('reverse', function () {
+	// 	it('should exist', function () {
+	// 		expect(reverse).toBeDefined();
+	// 	})
+	// 	it('should be a function', function () {
+	// 		expect(reverse).toEqual(jasmine.any(Function));
+	// 	})
+	// 	it('should return a string', function () {
+	// 		expect(reverse('')).toEqual(jasmine.any(String));
+	// 	})
+	// 	it('should reverse the string passed to it', function () {
+	// 		expect(reverse('abcd')).toEqual('dcba');
+	// 	})
+	// })
 	describe('removeItem', function () {
 		it('should exist', function () {
 			expect(removeItem).toBeDefined();

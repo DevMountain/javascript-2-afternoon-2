@@ -46,6 +46,23 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   //Code Here
 
 
+
+
+  
+
+
+
+// =============================================
+// =============================================
+// EXTRA PRACTICE PROBLEMS BELOW
+// =============================================
+// =============================================
+
+
+
+
+
+
 //Next problem
 
 
@@ -71,17 +88,7 @@ var getRandomArbitrary = function() {
 
   //Code Here
 
-  //Code Here
 
-
-//Next problem
-
-
-
-var str = 'this is my sentence';
-//Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
-
-  //Code Here
 
 
 //Next Problem
@@ -151,10 +158,14 @@ for(var i = 0; i < num2; i++){
   //Code Here
 
 
-/*As a continuation of the previous problem, write another function called 'both'.
-  Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example).
-  'both' should return a new array with the matching numbers found in both arr1 and arr2.
-  Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
+/*
+As a continuation of the previous problem, write another function called 'both'.
+
+Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example).
+
+'both' should return a new array with the matching numbers found in both arr1 and arr2.
+
+Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
 
   //Code Here
