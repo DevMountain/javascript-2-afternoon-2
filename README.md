@@ -7,8 +7,9 @@ JS-Arrays
 Better understand arrays in Javascript by completing a series of activities
 
 ## Directions
-Fork this repo, clone your fork, then open arraysPractice.js and complete all the activities. 
-* COMMIT AND PUSH YOUR CODE OFTEN!
+Fork this repo, clone your fork, then open arraysPractice.js and complete all the activities.
+- Complete the first **5** problems. If you finish early or want extra practice, complete the rest of the problems. 
+- *COMMIT AND PUSH YOUR CODE OFTEN!*
 
 ## Contributions
 If you see a problem or a typo, please fork, make the necessary changes, and create a pull request so we can review your changes and merge them into the master repo and branch.
