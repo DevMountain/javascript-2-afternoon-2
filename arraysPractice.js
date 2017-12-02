@@ -246,7 +246,7 @@ devMountainEmployees.splice(devMountainEmployees.indexOf(cahlan), 1);
 
 //Create an empty array called users.
 
-//Code Here
+var users = [];
 
 /*Now add three user objects to your users array. Each user object should contain the
  following properties. name, email, password, username.*/
@@ -258,7 +258,20 @@ var user1 = {
     password: 'iLoveJavaScript',
     username: 'infiniateLoop'
 };
+var user2 = {
+    name: 'john McGinnis',
+    email: 'tylermcginnis33@gmail.com',
+    password: 'iLoveJavaScript',
+    username: 'infiniateLoop'
+};
 
+var user3 = {
+    name: 'tido McGinnis',
+    email: 'tylermcginnis33@gmail.com',
+    password: 'iLoveJavaScript',
+    username: 'infiniateLoop'
+};
+users = [user1,user2,user3];
 //Your Code Here
 
 /*Now you have a very common data structure. Twitter is a good use case.
@@ -269,6 +282,6 @@ var user1 = {
  objects until you find Tyler's account (use tylermcginnis33@gmail.com to find him).
  Once you find the particular index he's located in, delete him from the array.*/
 
-//Code Here
+users.splice(users.indexOf(user1),1)
 
 //The activity we just did is very much how data works in 'the real world'.
