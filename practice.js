@@ -74,7 +74,7 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 /*
   Write a function named evenFinder that is given nums as it's only argument.
-  Keep only the odd numbers in the array and remove the even ones.
+  Return only the even numbers from the array.
 */
 
 //Code Here
@@ -281,7 +281,7 @@ var user1 = {
     name: 'Tyler McGinnis',
     email: 'tylermcginnis33@gmail.com',
     password: 'iLoveJavaScript',
-    username: 'infiniateLoop'
+    username: 'infiniteLoop'
 };
 // Do not edit the code above.
 
