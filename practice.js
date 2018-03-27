@@ -74,7 +74,7 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 /*
   Write a function named evenFinder that is given nums as it's only argument.
-  Return only the even numbers from the array.
+  Return an array that contains the even numbers from the nums array.
 */
 
 //Code Here
@@ -109,9 +109,9 @@ var getRandomArbitrary = function() {
 /* 
   var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
   Above you're given a function that will return a random number between 0 and 30. There is also a commented out array full of numbers to help you visualize what your function will be receiving.
-  
-  Write a function named finder that will get a random number (by invoking getRandomArbitrary).
-  Loop through the array (that will be passed in as a parameter) to see if that random number is in the array. 
+  Write a function named finder that will take in an array as an argument.
+  It will then  get a random number (by invoking getRandomArbitrary).
+  Loop through the array to see if that random number is in the array. 
   If it is, return true, if it's not, return false
 */
 
@@ -134,12 +134,14 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   Once you do that, write another function called addItem that is given two arguments, the first is myGroceryList and the second is an item to add to your grocery list. 
   In addItem add the item you passed in to myGroceryList then return the new, updated grocery list.
 
-  In both the removeItem function and the addItem function, you will also need to check for valid aurguments. SpecRunner will try to call your functions without passing in valid aurguments. 
-  When this happens, you will need to respond by returning an empty array.
+  In both removeItem and addItem check to see if the 'myGroceryList' and 'item' arguments are truthy.
+  If they are not, return an empty array.
 
   Here are some examples of calling your functions and what should be returned:
   removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
+  removeItem(myGroceryList) --> [];
+  addItem() --> [];
 */
 
 //Code Here
@@ -240,7 +242,7 @@ var colt = {
 // Do not edit the code above.
 
 /*
-  Above you're given an empty array with four objects. 
+  Above you're given an empty array and four variables containing objects. 
   Fill the devMountainEmployees array with those four objects. 
   After that console.log the length of the Array and make sure that it's equal to 4. 
 */

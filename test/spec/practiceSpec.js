@@ -1,122 +1,124 @@
 describe('arraysPractice', function () {
-	describe('first', function () {
-		it('should exist', function () {
-			expect(first).toBeDefined();
-		})
-		it('should be a function', function () {
-			expect(first).toEqual(jasmine.any(Function));
-		})
-		it('should return the first value of a passed array', function () {
-			var arr = [1, 2, 3];
-			expect(first(arr)).toBe(1);
-			expect(first([])).not.toBeDefined();
-		})
-	})
-	describe('last', function () {
-		it('should exist', function () {
-			expect(last).toBeDefined();
-		})
-		it('should be a function', function () {
-			expect(last).toEqual(jasmine.any(Function));
-		})
-		it('should return the last value of a passed array', function () {
-			var arr = [1, 2, 3];
-			expect(last(arr)).toBe(3);
-			expect(last([])).not.toBeDefined();
-		})
-	})
-	describe('looper', function () {
-		it('should exist', function () {
-			expect(looper).toBeDefined();
-		})
-		it('should call alert once for each item in the array', function () {
-			var alert = spyOn(window, 'alert');
-			var arr = [1, 2, 3];
-			looper(arr);
-			expect(alert.calls.count()).toBe(arr.length);
-		})
-		it('should call the items in order from first to last', function () {
-			var alert = spyOn(window, 'alert');
-			var arr = [1, 2, 3];
-			looper(arr);
-			for (var i = 0; i < arr.length; i++) {
-				expect(alert.calls.argsFor(i)[0]).toBe(arr[i]);
-			}
-		})
-	})
-	describe('reversedLooper', function () {
-		it('should exist', function () {
-			expect(reversedLooper).toBeDefined();
-		})
-		it('should call alert once for each item in the array', function () {
-			var alert = spyOn(window, 'alert');
-			var arr = [1,2,3];
-			reversedLooper(arr);
-			expect(alert.calls.count()).toBe(arr.length);
-		})
-		it('should call the items in order from last to first', function () {
-			var alert = spyOn(window, 'alert');
-			var arr = [1, 2, 3];
-			reversedLooper(arr);
-			for (var i = 0; i < arr.length; i++) {
-				expect(alert.calls.argsFor(i)[0]).toBe(arr[arr.length - 1 - i]);
-			}
-		})
-	})
-	describe('evenFinder', function () {
-		it('should exist', function () {
-			expect(evenFinder).toBeDefined();
-		})
-		it('should be a function', function () {
-			expect(evenFinder).toEqual(jasmine.any(Function));
-		})
-		it('should return an array', function () {
-			expect(evenFinder([])).toEqual(jasmine.any(Array));
-		})
-		it('should return an array with only even numbers', function () {
-			var arr = [1, 2, 3, 4, 5, 6];
-			var evens = evenFinder(arr);
-			expect(evens).toEqual([2, 4, 6]);
-		})
-	})
-	describe('divider', function () {
-		it('should exist', function () {
-			expect(divider).toBeDefined();
-		})
-		it('should be a function', function () {
-			expect(divider).toEqual(jasmine.any(Function));
-		})
-		it('should return an array of two arrays', function () {
-			expect(divider([])).toEqual([jasmine.any(Array), jasmine.any(Array)])
-		})
-		it('should have even numbers in the first array and odd numbers in the second array', function () {
-			var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-			var divided = divider(arr);
-			var expected = [[2, 4, 6, 8], [1, 3, 5, 7, 9]]
-			expect(divided).toEqual(expected);
-		})
-	})
-	describe('finder', function () {
-		it('should exist', function () {
-			expect(finder).toBeDefined();
-		})
-		it('should be a function', function () {
-			expect(finder).toEqual(jasmine.any(Function));
-		})
-		it('should return a boolean', function () {
-			expect(finder([])).toEqual(jasmine.any(Boolean));
-		})
-		it('should return true if the random number is found in the array', function () {
-			var rand = spyOn(window, 'getRandomArbitrary').and.returnValue(3);
-			var arr = [1, 2, 3];
-			expect(finder(arr)).toBe(true);
-		})
-		it('should return false if the random number is not found in the array', function () {
-			var rand = spyOn(window, 'getRandomArbitrary').and.returnValue(4);
-			var arr = [1, 2, 3];
-			expect(finder(arr)).toBe(false);
-		})
-	})
+	// describe('first', function () {
+	// 	it('should exist', function () {
+	// 		expect(first).toBeDefined();
+	// 	})
+	// 	it('should be a function', function () {
+	// 		expect(first).toEqual(jasmine.any(Function));
+	// 	})
+	// 	it('should return the first value of a passed array', function () {
+	// 		var arr = [1, 2, 3];
+	// 		expect(first(arr)).toBe(1);
+	// 		expect(first([])).not.toBeDefined();
+	// 	})
+	// })
+	// describe('last', function () {
+	// 	it('should exist', function () {
+	// 		expect(last).toBeDefined();
+	// 	})
+	// 	it('should be a function', function () {
+	// 		expect(last).toEqual(jasmine.any(Function));
+	// 	})
+	// 	it('should return the last value of a passed array', function () {
+	// 		var arr = [1, 2, 3];
+	// 		expect(last(arr)).toBe(3);
+	// 		expect(last([])).not.toBeDefined();
+	// 	})
+	// })
+	// describe('looper', function () {
+	// 	it('should exist', function () {
+	// 		expect(looper).toBeDefined();
+	// 	})
+	// 	it('should call alert once for each item in the array', function () {
+	// 		var alert = spyOn(window, 'alert');
+	// 		var arr = [1, 2, 3];
+	// 		looper(arr);
+	// 		expect(alert.calls.count()).toBe(arr.length);
+	// 	})
+	// 	it('should call the items in order from first to last', function () {
+	// 		var alert = spyOn(window, 'alert');
+	// 		var arr = [1, 2, 3];
+	// 		looper(arr);
+	// 		for (var i = 0; i < arr.length; i++) {
+	// 			expect(alert.calls.argsFor(i)[0]).toBe(arr[i]);
+	// 		}
+	// 	})
+	// })
+	// describe('reversedLooper', function () {
+	// 	it('should exist', function () {
+	// 		expect(reversedLooper).toBeDefined();
+	// 	})
+	// 	it('should call alert once for each item in the array', function () {
+	// 		var alert = spyOn(window, 'alert');
+	// 		var arr = [1,2,3];
+	// 		reversedLooper(arr);
+	// 		expect(alert.calls.count()).toBe(arr.length);
+	// 	})
+	// 	it('should call the items in order from last to first', function () {
+	// 		var alert = spyOn(window, 'alert');
+	// 		var arr = [1, 2, 3];
+	// 		reversedLooper(arr);
+	// 		for (var i = 0; i < arr.length; i++) {
+	// 			expect(alert.calls.argsFor(i)[0]).toBe(arr[arr.length - 1 - i]);
+	// 		}
+	// 	})
+	// })
+	// describe('evenFinder', function () {
+	// 	it('should exist', function () {
+	// 		expect(evenFinder).toBeDefined();
+	// 	})
+	// 	it('should be a function', function () {
+	// 		expect(evenFinder).toEqual(jasmine.any(Function));
+	// 	})
+	// 	it('should return an array', function () {
+	// 		expect(evenFinder([])).toEqual(jasmine.any(Array));
+	// 	})
+	// 	it('should return an array with only even numbers', function () {
+	// 		var arr = [1, 2, 3, 4, 5, 6];
+	// 		var evens = evenFinder(arr);
+	// 		expect(evens).toEqual([2, 4, 6]);
+	// 	})
+	// })
+	// describe('divider', function () {
+	// 	it('should exist', function () {
+	// 		expect(divider).toBeDefined();
+	// 	})
+	// 	it('should be a function', function () {
+	// 		expect(divider).toEqual(jasmine.any(Function));
+	// 	})
+	// 	it('should return an array of two arrays', function () {
+	// 		expect(divider([])).toEqual([jasmine.any(Array), jasmine.any(Array)])
+	// 	})
+	// 	it('should have even numbers in the first array and odd numbers in the second array', function () {
+	// 		var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+	// 		var divided = divider(arr);
+	// 		var expected = [[2, 4, 6, 8], [1, 3, 5, 7, 9]]
+	// 		expect(divided).toEqual(expected);
+	// 	})
+	// })
+	// describe('finder', function () {
+	// 	it('should exist', function () {
+	// 		expect(finder).toBeDefined();
+	// 	})
+	// 	it('should be a function', function () {
+	// 		expect(finder).toEqual(jasmine.any(Function));
+	// 	})
+	// 	it('should return a boolean', function () {
+	// 		expect(finder([])).toEqual(jasmine.any(Boolean));
+	// 	})
+	// 	it('should return true if the random number is found in the array', function () {
+	// 		var rand = spyOn(window, 'getRandomArbitrary').and.returnValue(3);
+	// 		var arr = [1, 2, 3];
+	// 		expect(finder(arr)).toBe(true);
+	// 	})
+	// 	it('should return false if the random number is not found in the array', function () {
+	// 		var rand = spyOn(window, 'getRandomArbitrary').and.returnValue(4);
+	// 		var arr = [1, 2, 3];
+	// 		expect(finder(arr)).toBe(false);
+	// 	})
+	// })
+
+
 	// describe('reverse', function () {
 	// 	it('should exist', function () {
 	// 		expect(reverse).toBeDefined();
@@ -140,6 +142,12 @@ describe('arraysPractice', function () {
 		})
 		it('should return an array', function () {
 			expect(removeItem([])).toEqual(jasmine.any(Array));
+		})
+		it('should check for that the groceryList argument is truthy', function () {
+			expect(removeItem()).toEqual(jasmine.any(Array));
+		})
+		it('if the item argument is falsy it return an empty array', function () {
+			expect(removeItem([1]).length).toEqual(0);
 		})
 		it('should remove an item from a groceryList array (if it is in the array)', function () {
 			var groceryList = ['chips', 'soda', 'celery', 'pizza'];
@@ -172,6 +180,12 @@ describe('arraysPractice', function () {
 			var item = 'pizza';
 			var result = addItem(groceryList, item);
 			expect(result).toEqual(['pizza']);
+		})
+		it('should check for that the groceryList argument is truthy', function () {
+			expect(addItem()).toEqual(jasmine.any(Array));
+		})
+		it('if the item argument is falsy it return an empty array', function () {
+			expect(addItem([1])).toEqual([]);
 		})
 	})
 	describe('maker', function () {
@@ -265,8 +279,8 @@ describe('arraysPractice', function () {
 	})
 	describe('users', function () {
 		it('should exist and contain items', function () {
-			expect(devMountainEmployees).toBeDefined();
-			expect(devMountainEmployees.length).not.toBe(0);
+			expect(users).toBeDefined();
+			expect(users.length).not.toBe(0);
 		})
 		it('(when complete) should not contain Tyler', function () {
 			var hasTyler = false;
