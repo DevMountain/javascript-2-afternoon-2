@@ -117,20 +117,7 @@ describe('arraysPractice', function () {
 			expect(finder(arr)).toBe(false);
 		})
 	})
-	// describe('reverse', function () {
-	// 	it('should exist', function () {
-	// 		expect(reverse).toBeDefined();
-	// 	})
-	// 	it('should be a function', function () {
-	// 		expect(reverse).toEqual(jasmine.any(Function));
-	// 	})
-	// 	it('should return a string', function () {
-	// 		expect(reverse('')).toEqual(jasmine.any(String));
-	// 	})
-	// 	it('should reverse the string passed to it', function () {
-	// 		expect(reverse('abcd')).toEqual('dcba');
-	// 	})
-	// })
+
 	describe('removeItem', function () {
 		it('should exist', function () {
 			expect(removeItem).toBeDefined();
@@ -140,6 +127,12 @@ describe('arraysPractice', function () {
 		})
 		it('should return an array', function () {
 			expect(removeItem([])).toEqual(jasmine.any(Array));
+		})
+		it('should check for that the groceryList argument is truthy', function () {
+			expect(removeItem()).toEqual(jasmine.any(Array));
+		})
+		it('if the item argument is falsy it return an empty array', function () {
+			expect(removeItem([1]).length).toEqual(0);
 		})
 		it('should remove an item from a groceryList array (if it is in the array)', function () {
 			var groceryList = ['chips', 'soda', 'celery', 'pizza'];
@@ -172,6 +165,12 @@ describe('arraysPractice', function () {
 			var item = 'pizza';
 			var result = addItem(groceryList, item);
 			expect(result).toEqual(['pizza']);
+		})
+		it('should check for that the groceryList argument is truthy', function () {
+			expect(addItem()).toEqual(jasmine.any(Array));
+		})
+		it('if the item argument is falsy it return an empty array', function () {
+			expect(addItem([1])).toEqual([]);
 		})
 	})
 	describe('maker', function () {
@@ -265,8 +264,8 @@ describe('arraysPractice', function () {
 	})
 	describe('users', function () {
 		it('should exist and contain items', function () {
-			expect(devMountainEmployees).toBeDefined();
-			expect(devMountainEmployees.length).not.toBe(0);
+			expect(users).toBeDefined();
+			expect(users.length).not.toBe(0);
 		})
 		it('(when complete) should not contain Tyler', function () {
 			var hasTyler = false;
