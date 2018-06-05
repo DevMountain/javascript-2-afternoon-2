@@ -81,7 +81,18 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 
 
-////////// EXTRA PRACTICE PROBLEMS BELOW //////////
+
+
+
+
+/////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
+////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
+
+
+
+
+
+
 
 ////////// PROBLEM 6 //////////
 
