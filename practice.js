@@ -59,7 +59,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
 /*
   Write a function called reversedLooper that is given letters as it's only argument. 
-  Loop through the given array backwards alerting every item in the array starting at the end.\
+  Loop backwards, starting at the end of the letters array, alerting every item in the array.
 */
 
 //Code Here
@@ -102,7 +102,8 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 /*
   Write a function called divider that is given one argument, numbersArray.
-  Have divider return an Array with the first item in the array being the evens array (all the even values from numbersArray) and the second item in the Array being the odds array (all the odd values from numbersArray).
+  Have divider return an array with the first item in the array being the evens array (all the even values from numbersArray)
+  and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
 //Code Here
@@ -119,10 +120,11 @@ var getRandomArbitrary = function() {
 
 /* 
   var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
-  Above you're given a function that will return a random number between 0 and 30. There is also a commented out array full of numbers to help you visualize what your function will be receiving.
+  Above you're given a function (getRandomArbitrary) that will return a random number between 0 and 30.
+  There is also a commented out array full of numbers to help you visualize what your function will be receiving.
   Write a function named finder that will take in an array as an argument.
-  It will then  get a random number (by invoking getRandomArbitrary).
-  Loop through the array to see if that random number is in the array. 
+  In the function create a variable called randomNumber and set it to the invocation of getRandomArbitrary.
+  Loop through the array to see if randomNumber is in the array. 
   If it is, return true, if it's not, return false
 */
 
@@ -178,7 +180,7 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 /*
   Write a function called addTen that is given 'numbers' as it's only argument.
   Return a new array after adding ten to each item in numbers. 
-  *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
+  Your output should look like this -> [15, 19, 26, 29, 35, 44, 58]
 */
   
 //Code Here
@@ -203,7 +205,7 @@ for(var i = 0; i < num2; i++){
 /*
   Above is some code that adds a random number of values to both arr1 and arr2.
   Write a function called 'longer' that is given arr1 and arr2 as it's only arguments. 
-  Return the array which is longest.
+  Return the longer of the two arrays.
 */
 
 //Code Here
@@ -227,9 +229,9 @@ for(var i = 0; i < num2; i++){
 // Do not edit the code below.
 var devMountainEmployees = [];
 
-var tyler = {
-    name: 'Tyler',
-    position: 'Lead Instructor/Engineer',
+var joe = {
+    name: 'Joe',
+    position: 'Instructor',
     spiritAnimal: 'Honey Badger'
 };
 
@@ -263,7 +265,7 @@ var colt = {
 
 
 /*
-  Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
+  Now let's say Cahlan has to take a leave of absence.
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
 */
 
@@ -275,7 +277,7 @@ var colt = {
 
 
 /*
-  A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects) of Data is to have an Array full of objects. 
+  A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects) of data is to have an array full of objects. 
   Create an empty array called users.
 */
 
@@ -291,10 +293,10 @@ var colt = {
 
 // Do not edit the code below.
 var user1 = {
-    name: 'Tyler McGinnis',
-    email: 'tylermcginnis33@gmail.com',
-    password: 'iLoveJavaScript',
-    username: 'infiniteLoop'
+    name: 'Mark McIver',
+    email: 'mark.mciver@devmounta.in',
+    password: 'hunter2',
+    username: 'ihazcode'
 };
 // Do not edit the code above.
 
@@ -305,11 +307,11 @@ var user1 = {
 /*
   Now you have a very common data structure. 
   Twitter is a good use case.
-  It's easy to imagine that your followers list on Twitter is an Array full of objects and those objects contain properties about the specific person you follow.
+  It's easy to imagine that your followers list on Twitter is an array full of objects and those objects contain properties about the specific person you follow.
 
-  Now let's say that Tyler decided to delete his account.
-  Loop through your array of objects until you find Tyler's account (use tylermcginnis33@gmail.com to find him).
-  Once you find the particular index he's located in, delete him from the array.
+  Now let's say that Mark decided to delete his account.
+  Loop through your array of objects until you find Mark's account (use his email, mark.mciver@devmounta.in, to find him).
+  Once you find the array index he's located in, delete him from the array.
 */
 
 //Code Here
