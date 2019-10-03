@@ -267,14 +267,14 @@ describe('arraysPractice', function () {
 			expect(users).toBeDefined();
 			expect(users.length).not.toBe(0);
 		})
-		it('(when complete) should not contain Tyler', function () {
-			var hasTyler = false;
+		it('(when complete) should not contain Mark', function () {
+			var hasMark = false;
 			for (var i = 0; i < users.length; i++) {
-				if (users[i].name === 'Tyler McGinnis') {
-					hasTyler = true;
+				if (users[i].email === 'mark.mciver@devmounta.in') {
+					hasMark = true;
 				}
 			}
-			expect(hasTyler).toBe(false);
+			expect(hasMark).toBe(false);
 		})
 	})
 })
