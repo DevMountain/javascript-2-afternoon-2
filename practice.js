@@ -256,8 +256,9 @@ var colt = {
 
 /*
   Above you're given an empty array and four variables containing objects. 
-  Fill the devMountainEmployees array with those four objects. 
-  After that console.log the length of the Array and make sure that it's equal to 4. 
+  Fill the devMountainEmployees array with those four objects. Do this in either
+  the global scope or in a function. If done in a function, invoke it.
+  After that, console.log the length of the Array and make sure that it's equal to 4. 
 */
 
 //Code Here
