@@ -279,7 +279,13 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(arr1, arr2){
+  if (arr1.length > arr2.length){
+    return arr1
+  } else {
+    return arr2
+  }
+}
 
 
 /*
@@ -291,7 +297,16 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function both(arr1, arr2){
+  newArray = []
+  for (let i = 0; i < arr1.length; i++){
+    for (let j = 0; j < arr2.length; j++){
+      if (arr1[i] === arr2[j]){
+        newArray.push(arr1[i])
+      }
+    }
+  } return newArray 
+}
 
 
 ////////// PROBLEM 12 //////////
