@@ -287,9 +287,11 @@ var colt = {
 
 
 /*
-  Now add three user objects to your users array. Each user object should contain the following properties. name, email, password, username.
+  Now add three user objects to your users array. Each user object should contain the following properties: name, email, password, username.
 
   Include the following user1 object as one of the objects in your array.
+  
+  MAKE SURE TO DO THIS IN THE SECTION BELOW WHERE USER1 IS DECLARED
 */
 
 // Do not edit the code below.
