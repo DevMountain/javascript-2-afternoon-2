@@ -202,7 +202,7 @@ function removeItem(myGroceryList,item){
       myGroceryList.splice(i,1)
     }
   }
-  if (myGroceryList !== false){
+  if (myGroceryList && item){
     return myGroceryList
   } else {
     return []
@@ -211,7 +211,7 @@ function removeItem(myGroceryList,item){
 
 function addItem(myGroceryList, item){
   myGroceryList.push(item)
-  if (myGroceryList !== false){
+  if (item && myGroceryList){
     return myGroceryList
   } else {
     return []
@@ -346,7 +346,8 @@ var colt = {
 */
 
 //Code Here
-
+devMountainEmployees.push(joe, cahlan, ryan, colt)
+console.log(devMountainEmployees.length)
 
 
 /*
@@ -355,7 +356,15 @@ var colt = {
 */
 
 //Code Here
-
+function removeCah(devMountainEmployees){
+  for (let i = 0; i < devMountainEmployees.length; i++){
+  for (let j = 0; j < 4; j++){
+    if (devMountainEmployees.name[j]==='Cahlan'){
+      devMountainEmployees.splice(i,1)
+    }
+  }
+  }
+}
 
 
 ////////// PROBLEM 13 //////////
@@ -367,7 +376,7 @@ var colt = {
 */
 
 //Code Here
-
+let users = []
 
 
 /*
@@ -386,8 +395,20 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
+var user2 = {
+  name: 'Mark McIver',
+  email: 'mark.mciver@devmounta.in',
+  password: 'hunter2',
+  username: 'ihazcode'
+};
+var user3 = {
+  name: 'Mark McIver',
+  email: 'mark.mciver@devmounta.in',
+  password: 'hunter2',
+  username: 'ihazcode'
+};
 
-
+users.push(user1, user2, user3)
 
 /*
   Now you have a very common data structure. 
