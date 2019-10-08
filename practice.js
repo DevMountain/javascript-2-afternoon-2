@@ -356,15 +356,31 @@ console.log(devMountainEmployees.length)
 */
 
 //Code Here
-function removeCah(devMountainEmployees){
+// function removeCah(devMountainEmployees){
+//   for (let i = 0; i < devMountainEmployees.length; i++){
+//   for (let j = 0; j < 4; j++){
+//     if (devMountainEmployees.name[j]==='Cahlan'){
+//       devMountainEmployees.splice(i,1)
+//     }
+//   }
+//   }
+// }
+
+function deleteCah(){
   for (let i = 0; i < devMountainEmployees.length; i++){
-  for (let j = 0; j < 4; j++){
-    if (devMountainEmployees.name[j]==='Cahlan'){
-      devMountainEmployees.splice(i,1)
+    console.log(i)
+    for (key in devMountainEmployees[i]){
+      if (devMountainEmployees[i].name === "Cahlan"){
+          devMountainEmployees.splice(i,1)
+          
+          
+      }
+      
     }
-  }
-  }
+  } return devMountainEmployees
 }
+
+deleteCah(devMountainEmployees)
 
 
 ////////// PROBLEM 13 //////////
@@ -421,7 +437,13 @@ users.push(user1, user2, user3)
 */
 
 //Code Here
-
+function deleteMark(){
+  for (key in users){
+    if (users.name === "Mark"){
+      delete users[key]
+    } 
+  }
+}
 
 
 /*
