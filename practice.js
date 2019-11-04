@@ -154,18 +154,18 @@ var getRandomArbitrary = function () {
 function finder(arr) {
   let randomNumber = getRandomArbitrary()
   for (let i = 0; i < arr.length; i++) {
-      if (arr[i] === randomNumber) {
-        return true
-      } 
-      
+    if (arr[i] === randomNumber) {
+      return true
     }
-    // console.log(arr)
-    return false
-  }
 
-  // console.log(getRandomArbitrary())
-  // console.log(finder([0,3,4,5,6,7,9,14,17,24,25,26,29,30]))
-  
+  }
+  // console.log(arr)
+  return false
+}
+
+// console.log(getRandomArbitrary())
+// console.log(finder([0,3,4,5,6,7,9,14,17,24,25,26,29,30]))
+
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.
@@ -190,8 +190,35 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   removeItem(myGroceryList) --> [];
   addItem() --> [];
 */
-
 //Code Here
+
+//removeItem
+function removeItem(myGroceryList, item) {
+  if (!myGroceryList) {
+    return []
+  }
+  if (!item) {
+    return []
+  }
+  for (let i = 0; i < myGroceryList.length; i++) {
+    if (myGroceryList[i] === item) {
+      myGroceryList.splice(i, 1)
+    }
+  }
+  return myGroceryList
+}
+
+//addItem
+function addItem(myGroceryList, item) {
+  if (!myGroceryList) {
+    return []
+  }
+  if (!item) {
+    return []
+  }
+  myGroceryList.push(item)
+  return myGroceryList
+}
 
 
 
