@@ -229,7 +229,13 @@ function addItem(myGroceryList, item) {
 */
 
 //Code Here
-
+function maker() {
+  let arr = []
+  for (let i = 1; i < 216; i++) {
+    arr.push(i)
+  }
+  return arr
+}
 
 
 ////////// PROBLEM 10 //////////
@@ -243,9 +249,14 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   Return a new array after adding ten to each item in numbers. 
   Your output should look like this -> [15, 19, 26, 29, 35, 44, 58]
 */
-
 //Code Here
-
+function addTen(numbers) {
+  for (i = 0; i < numbers.length; i++) {
+    numbers.splice(i, 1, +numbers[i] + 10)
+  }
+  // console.log(numbers)
+  return numbers
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -268,8 +279,14 @@ for (var i = 0; i < num2; i++) {
   Write a function called 'longer' that is given arr1 and arr2 as it's only arguments. 
   Return the longer of the two arrays.
 */
-
 //Code Here
+function longer(arr1, arr2) {
+  if (arr1.length > arr2.length) {
+    return arr1
+  } else {
+    return arr2
+  }
+}
 
 
 
@@ -280,9 +297,18 @@ for (var i = 0; i < num2; i++) {
 
   Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
-
 //Code Here
-
+function both(arr1, arr2) {
+  let arr = []
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = arr2.length; j >= 0; j--) {
+      if (arr1[i] === arr2[j]) {
+        arr.push(arr1[i])
+      }
+    }
+  }
+  return arr
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -320,8 +346,8 @@ var colt = {
   Fill the devMountainEmployees array with those four objects. 
   After that console.log the length of the Array and make sure that it's equal to 4. 
 */
-
 //Code Here
+devMountainEmployees.push(joe, cahlan, ryan, colt)
 
 
 
@@ -329,17 +355,20 @@ var colt = {
   Now let's say Cahlan has to take a leave of absence.
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
 */
-
 //Code Here
-// function removeCah(devMountainEmployees){
-//   for (let i = 0; i < devMountainEmployees.length; i++){
-//   for (let j = 0; j < 4; j++){
-//     if (devMountainEmployees.name[j]==='Cahlan'){
-//       devMountainEmployees.splice(i,1)
-//     }
-//   }
-//   }
-// }
+function deleteCah() {
+  for (let i = 0; i < devMountainEmployees.length; i++) {
+    // console.log(devMountainEmployees[i].name)
+    if (devMountainEmployees[i].name === 'Cahlan') {
+      devMountainEmployees.splice(i, 1)
+    }
+  }
+  // console.log(devMountainEmployees)
+  return devMountainEmployees
+}
+
+deleteCah()
+
 
 
 
@@ -351,8 +380,8 @@ var colt = {
   A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects) of data is to have an array full of objects. 
   Create an empty array called users.
 */
-
 //Code Here
+users = []
 
 
 
@@ -370,8 +399,8 @@ var user1 = {
   username: 'ihazcode'
 };
 // Do not edit the code above.
-
 //Code Here
+users.push(user1, {}, {})
 
 
 
@@ -384,9 +413,17 @@ var user1 = {
   Loop through your array of objects until you find Mark's account (use his email, mark.mciver@devmounta.in, to find him).
   Once you find the array index he's located in, delete him from the array.
 */
-
 //Code Here
+function deleteMark(){
+  for (let i=0; i< users.length; i++){
+    if (users[i].email === 'mark.mciver@devmounta.in'){
+      users.splice(i,1)
+    }
+  }
+  return users
+}
 
+// console.log(deleteMark())
 
 
 /*
